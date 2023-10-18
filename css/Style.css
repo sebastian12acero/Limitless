@@ -1,0 +1,146 @@
+body {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas:
+        "header"
+        "main"
+        "footer";
+    height: 100vh;
+    margin: 0;
+}
+
+.header {
+    grid-area: header;
+    background-color: #062027;
+    color: white;
+    padding: 0;
+    height: 9vh;
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.contenedorlogo {
+    display: flex;
+    align-items: center;
+
+}
+
+
+.imagen-logo {
+    padding: 3px 5px;
+    height: 7vh;
+    width: auto;
+
+}
+
+.nombre-logo {
+
+    color: antiquewhite;
+    font-size: 20px;
+    padding: 3px 5px;
+    margin: 0;
+}
+
+.contenedorlista {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 10px;
+
+
+}
+
+
+.lista-Header a {
+    color: antiquewhite;
+    margin: 1px 4px;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+
+
+.Botonesheader {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    flex-wrap: 10px;
+}
+
+.btnopcionuno {
+
+    background-color: #062027;
+    color: antiquewhite;
+    border: none;
+    font-size: 20px;
+    height: 100%;
+    padding: 10px;
+
+}
+
+button:hover {
+    background-color: #155e6a;
+}
+
+a:hover {
+    color: #7ea59e;
+}
+
+.btninicio {
+    background-color: #155e6a;
+    color: antiquewhite;
+    border: none;
+    font-size: 20px;
+    height: 100%;
+}
+
+
+svg {
+    fill: white;
+    width: auto;
+    height: 60%;
+
+}
+
+@media (max-width: 671px) {
+    .imagen-logo {
+        text-align: center;
+        height: 7vh auto;
+        width: auto;
+    }
+
+    .nombre-logo {
+        display: none;
+    }
+    
+
+
+}
+
+.main {
+    grid-area: main;
+    padding: 0;
+    margin: 0;
+    display: flex;
+
+}
+
+.carousel-container {
+   padding: 0;
+    overflow: hidden;
+}
+
+.carousel {
+    display: flex;
+   
+   
+}
+
+.carousel img {
+    width: 448px;
+    height: 100vh;
+
+}
