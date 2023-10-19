@@ -78,6 +78,7 @@ body {
     font-size: 20px;
     height: 100%;
     padding: 10px;
+    text-decoration: none;
 
 }
 
@@ -89,14 +90,20 @@ a:hover {
     color: #7ea59e;
 }
 
-.btninicio {
+.btninicio  {
     background-color: #155e6a;
-    color: antiquewhite;
+    
     border: none;
     font-size: 20px;
     height: 100%;
+    
 }
 
+.btninicio a{
+text-decoration: none;
+color: antiquewhite;
+
+}
 
 svg {
     fill: white;
@@ -131,6 +138,7 @@ svg {
 .carousel-container {
    padding: 0;
     overflow: hidden;
+    display: flex;
 }
 
 .carousel {
