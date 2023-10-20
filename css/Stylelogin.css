@@ -11,7 +11,6 @@
 
 }
 
-
 .imagen-logologin {
 
     height: 10vh;
@@ -23,8 +22,19 @@
 
 
 .Registro {
-
-    display: none;
+    font-family: sans-serif;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    width: 40vh;
+    height: 70vh;
+    padding: 25px;
+    background-color: #16485f;
+    box-shadow: 0px 15px 60px #155e6a;
+    outline: 1px solid #7ea59e;
+    border-radius: 10px;
+    overflow: hidden;
 }
 
 
@@ -72,6 +82,13 @@
     margin-top: 2vh;
 }
 
+.input-area2 {
+    margin-top: 1vh;
+    background-color:#16485f;
+}
+
+/* login*/
+
 .form-inp {
     padding: 11px 25px;
     background: #e3ede6;
@@ -81,7 +98,7 @@
 
 
 .form-inp:first-child {
-    margin-bottom: 15px;
+    margin: 15px;
 }
 
 .form-inp input {
@@ -98,8 +115,41 @@
     outline: none;
 }
 
+/* registro*/
+
+.form-inp2 {
+    padding: 11px 25px;
+    background: #e3ede6;
+    line-height: 0;
+    border-radius: 8px;
+}
+
+
+.form-inp2{
+    margin: 15px;
+}
+
+.form-inp2 input {
+    width: 100%;
+    background: none;
+    font-size: 13.4px;
+    color: #16485f;
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+
+.form-inp2 input:focus {
+    outline: none;
+}
+
+
 .submit-button-cvr {
     margin-top: 20px;
+}
+
+.submit-button-cvr2 {
+    margin-top: 0px;
 }
 
 .submit-button {
