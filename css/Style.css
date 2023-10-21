@@ -1,9 +1,10 @@
 body {
     display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto 1fr auto;
+    grid-template-columns: 8fr;
+    grid-template-rows: auto 2fr auto;
     grid-template-areas:
         "header"
+        "nav"
         "main"
         "footer";
     height: 100vh;
@@ -128,6 +129,14 @@ svg {
 }
 
 .main {
+    grid-area: main;
+    padding: 0;
+    margin: 0;
+    display: flex;
+
+}
+
+.nav {
     grid-area: main;
     padding: 0;
     margin: 0;

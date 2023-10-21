@@ -1,0 +1,260 @@
+body {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    /* Define tres columnas */
+    grid-template-rows: auto 1fr;
+    /* Define dos filas */
+    grid-template-areas:
+        "header header header"
+        "nav main aside";/* Define áreas para header, nav, main y aside */
+    height: 100vh auto; /* Ajusta la altura al 100% del viewport */
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
+/* Main */
+main {
+    grid-area: main;
+    /* Asigna al área "main" */
+    background: #f4f4f4;
+    padding: 20px;
+}
+
+/* Aside */
+aside {
+    grid-area: aside;
+    /* Asigna al área "aside" */
+    background: #333;
+    color: #fff;
+    padding: 10px;
+}
+
+
+.header {
+    grid-area: header;
+    background-color: #062027;
+    color: white;
+    padding: 0;
+    height: 9vh;
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.contenedorlogo {
+    display: flex;
+    align-items: center;
+
+}
+
+
+.imagen-logo {
+    padding: 3px 5px;
+    height: 7vh;
+    width: auto;
+
+}
+
+.nombre-logo {
+
+    color: antiquewhite;
+    font-size: 20px;
+    padding: 3px 5px;
+    margin: 0;
+}
+
+.contenedorlista {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 10px;
+
+
+}
+
+
+.lista-Header a {
+    color: antiquewhite;
+    margin: 1px 4px;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+
+
+.Botonesheader {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    flex-wrap: 10px;
+}
+
+.btnopcionuno {
+
+    background-color: #062027;
+    color: antiquewhite;
+    border: none;
+    font-size: 20px;
+    height: 100%;
+    padding: 10px;
+    text-decoration: none;
+
+}
+
+button:hover {
+    background-color: #155e6a;
+}
+
+a:hover {
+    color: #7ea59e;
+}
+
+.btninicio {
+    background-color: #155e6a;
+    border: none;
+    font-size: 20px;
+    height: 100%;
+
+}
+
+.btninicio a {
+    text-decoration: none;
+    color: antiquewhite;
+
+}
+
+svg {
+    fill: white;
+    width: auto;
+    height: 60%;
+
+}
+
+@media (max-width: 671px) {
+    .imagen-logo {
+        text-align: center;
+        height: 7vh auto;
+        width: auto;
+    }
+
+    .nombre-logo {
+        display: none;
+    }
+
+
+
+}
+
+
+/* Nav */
+
+.conetedornav {
+    
+    grid-area: nav;
+    /* Asigna al área "nav" */
+    display: flex;
+    background-color: #16485f;
+    margin: 0 10vh 0 0;
+    padding: 0;
+    flex-direction: column;
+    align-items: center;
+    
+   
+}
+.psticky{
+
+    position: sticky;
+    top: 59px;
+
+
+}
+.seccionnav {
+    width: 100%;
+    height: 84%;
+   
+
+}
+.perfilnv {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+    border: none;
+    text-decoration: none;
+}
+
+
+.btnnav {
+    display: flex;
+    align-items: center;
+    border: none;
+    background-color: transparent;
+    text-decoration: none;
+    margin: 3vh 0vh;
+    width: 100%;
+    height: 7vh;
+}
+
+.fotoperfilp {
+    height: 10vh;
+    width: auto;
+    padding: 1vh;
+}
+
+.namep {
+    color: #e3ede6;
+    margin: 0;
+    font-size: 20px;
+    padding: 5px 1px 1px 10px;
+}
+
+.namept{
+    font-size: 18px;
+    color: #e3ede6;
+
+}
+
+.footer {
+    display: flex;
+    background-color: transparent;
+
+}
+
+
+
+.btnnav:hover {
+    background-color: #155e6a;
+}
+
+.btnnav p:hover {
+    color: #7ea59e;
+}
+
+.textfooter {
+    margin: 20vh 0vh 0vh 0vh;
+    align-items: flex-end;
+    color: #e3ede6;
+
+}
+
+.contenedorArticulos {
+    position: relative;
+    margin: 10px auto;
+    width: 30vw;
+}
+
+.seccionpost {
+
+    display: flex;
+    background-color: #155e6a;
+    ;
+}
