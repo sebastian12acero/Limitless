@@ -1,38 +1,31 @@
 body {
     display: grid;
     grid-template-columns: 1fr 3fr 1fr;
-    /* Define tres columnas */
     grid-template-rows: auto 1fr;
-    /* Define dos filas */
     grid-template-areas:
         "header header header"
-        "nav main aside";/* Define áreas para header, nav, main y aside */
-    height: 100vh auto; /* Ajusta la altura al 100% del viewport */
+        "nav main aside";
+    height: 100vh auto;
     margin: 0;
     padding: 0;
+    background-color: #7ea59e;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-
-
-
-/* Main */
 main {
     grid-area: main;
-    /* Asigna al área "main" */
-    background: #f4f4f4;
+    background: #7ea59e;
     padding: 20px;
 }
 
-/* Aside */
 aside {
     grid-area: aside;
-    /* Asigna al área "aside" */
-    background: #333;
-    color: #fff;
+    color: #e3ede6;
     padding: 10px;
+    background-color: #16485f;
 }
 
-
+/*seccion header*/
 .header {
     grid-area: header;
     background-color: #062027;
@@ -41,7 +34,6 @@ aside {
     height: 9vh;
     display: flex;
     justify-content: space-between;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     position: sticky;
     top: 0;
     z-index: 1000;
@@ -53,7 +45,6 @@ aside {
 
 }
 
-
 .imagen-logo {
     padding: 3px 5px;
     height: 7vh;
@@ -63,7 +54,7 @@ aside {
 
 .nombre-logo {
 
-    color: antiquewhite;
+    color: #e3ede6;
     font-size: 20px;
     padding: 3px 5px;
     margin: 0;
@@ -74,32 +65,32 @@ aside {
     justify-content: flex-end;
     align-items: center;
     padding: 10px;
-
-
 }
 
 
 .lista-Header a {
-    color: antiquewhite;
+    color: #e3ede6;
     margin: 1px 4px;
     font-size: 14px;
     text-decoration: none;
 }
 
-
+.lista-Header a:hover {
+    color: #7ea59e;
+}
 
 .Botonesheader {
     display: flex;
     padding: 0;
     margin: 0;
     text-align: center;
-    flex-wrap: 10px;
+
 }
 
 .btnopcionuno {
 
     background-color: #062027;
-    color: antiquewhite;
+    color: #e3ede6;
     border: none;
     font-size: 20px;
     height: 100%;
@@ -108,11 +99,11 @@ aside {
 
 }
 
-button:hover {
+.btnopcionuno:hover {
     background-color: #155e6a;
 }
 
-a:hover {
+.btnheader:hover {
     color: #7ea59e;
 }
 
@@ -126,12 +117,12 @@ a:hover {
 
 .btninicio a {
     text-decoration: none;
-    color: antiquewhite;
+    color: #e3ede6;
 
 }
 
-svg {
-    fill: white;
+.svgnav {
+    fill: #e3ede6;
     width: auto;
     height: 60%;
 
@@ -156,31 +147,31 @@ svg {
 /* Nav */
 
 .conetedornav {
-    
+
     grid-area: nav;
-    /* Asigna al área "nav" */
     display: flex;
     background-color: #16485f;
-    margin: 0 10vh 0 0;
+    margin: 0 3vh 0 0;
     padding: 0;
     flex-direction: column;
     align-items: center;
-    
-   
-}
-.psticky{
 
+
+}
+
+.psticky {
+    width: 100%;
     position: sticky;
     top: 59px;
 
-
 }
+
 .seccionnav {
     width: 100%;
-    height: 84%;
-   
+    height: 80%;
 
 }
+
 .perfilnv {
     display: flex;
     align-items: center;
@@ -192,6 +183,10 @@ svg {
     text-decoration: none;
 }
 
+.seccionbtnv {
+
+    width: 100%;
+}
 
 .btnnav {
     display: flex;
@@ -205,7 +200,7 @@ svg {
 }
 
 .fotoperfilp {
-    height: 10vh;
+    height: 8vh;
     width: auto;
     padding: 1vh;
 }
@@ -213,38 +208,49 @@ svg {
 .namep {
     color: #e3ede6;
     margin: 0;
-    font-size: 20px;
+    font-size: 18px;
     padding: 5px 1px 1px 10px;
 }
 
-.namept{
-    font-size: 18px;
+.namept {
+    font-size: 17px;
     color: #e3ede6;
 
+}
+
+.perfilnv:hover {
+    background-color: #155e6a;
 }
 
 .footer {
     display: flex;
     background-color: transparent;
-
 }
-
 
 
 .btnnav:hover {
     background-color: #155e6a;
 }
 
-.btnnav p:hover {
-    color: #7ea59e;
+
+.btnpopup:hover {
+    background-color: #7ea59e;
+}
+
+
+.boton-opcion:hover {
+    background-color: transparent;
 }
 
 .textfooter {
-    margin: 20vh 0vh 0vh 0vh;
+    margin: 10vh 0vh 0vh 0vh;
     align-items: flex-end;
     color: #e3ede6;
 
 }
+
+
+/*main*/
 
 .contenedorArticulos {
     position: relative;
@@ -256,5 +262,215 @@ svg {
 
     display: flex;
     background-color: #155e6a;
-    ;
+
+}
+
+.publicaciones {
+    text-align: center;
+    margin-top: 10px;
+    width: 100%;
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+}
+
+.popup-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #7ea59e;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.btninsertar {
+    color: #062027;
+}
+
+.textapublicar {
+
+    background-color: #e3ede6;
+    width: 100%;
+    height: 100px;
+    margin-bottom: 10px;
+
+}
+
+.textapublicar::placeholder {
+
+    color: black;
+    font-style: italic;
+    font-size: 14px;
+}
+
+input[type="file"] {
+    margin-bottom: 10px;
+}
+
+#publicar {
+    background-color: #155e6a;
+    border-radius: 5%;
+    color: #e3ede6;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+#publicar:hover {
+    background-color: #16485f;
+
+}
+
+#cerrar-popup {
+    background-color: #e3ede6;
+    border: none;
+    border-radius: 5%;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+#cerrar-popup:hover {
+    background-color: #999;
+}
+
+/*  publicaciones */
+.publicacion {
+    border: 1px solid #e3ede6;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+    width: 80vh;
+    position: relative;
+    left: 13vh;
+    top: -2vh;
+    background-color: #e3ede6;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+}
+
+.minfoto {
+    height: 7vh;
+    width: auto;
+
+
+}
+
+.publicacion-header {
+    display: flex;
+    align-items: center;
+
+}
+
+.titulopubli {
+    margin: 0;
+    padding-left: 10px;
+    font-size: 20px;
+    color: #062027;
+}
+
+.publicacion-texto {
+    margin: 10px 0;
+    font-size: 18px;
+    color: #062027;
+}
+
+.fotopublicada {
+    width: 526px;
+    height: 526px;
+    border-radius: 5px;
+
+}
+
+.publicacion-opciones {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+
+.boton-opcion {
+    background: none;
+    border: none;
+    color: #062027;
+    padding-top: 10px;
+}
+
+
+/*aside*/
+
+.contenedorhilos {
+    height: 45vh;
+    background-color: #155e6a;
+    margin: 0;
+    padding: 0;
+    border-radius: 10px 10px;
+    position: sticky;
+    top: 70px;
+
+
+}
+
+.btnpopup {
+    background-color: #062027;
+    color: #e3ede6;
+    border: none;
+    border-radius: 10px;
+    width: 90%;
+    height: 8vh;
+}
+
+
+
+.btnaside:hover {
+    background-color: #16485f;
+
+}
+
+.titutoaside {
+
+    color: #e3ede6;
+    padding-left: 10px;
+    padding-top: 10px;
+    font-size: 20px;
+    margin: 0;
+
+
+}
+
+.imgeneshilos {
+    height: 7vh;
+    width: auto;
+
+}
+
+.opcaside {
+    background-color: #155E6A;
+    padding: 1vh;
+}
+
+.btnaside {
+    display: flex;
+    border: none;
+    border-radius: 10px;
+    text-decoration: none;
+    justify-content: space-evenly;
+    width: 100%;
+    background-color: #155E6A;
+
+}
+
+
+.asidebtntext {
+    color: #e3ede6;
+    padding-left: 2px;
+    font-size: 13px;
 }

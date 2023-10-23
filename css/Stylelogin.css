@@ -1,15 +1,28 @@
+body {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas:
+
+        "main";
+        
+    height: 100vh;
+    margin: 0;
+}
+.main {
+    grid-area: main;
+    padding: 0;
+    margin: 0;
+    
+
+}
+
 .paglogin {
 
     display: flex;
     justify-content: center;
-    background-color: transparent;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    width: 100%;
-    overflow: hidden;
- 
-
+    position: relative;
+    top: 15vh;
 
 }
 
