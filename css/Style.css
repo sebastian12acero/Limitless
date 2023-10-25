@@ -9,6 +9,7 @@ body {
         "footer";
     height: 100vh;
     margin: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 .header {
@@ -19,7 +20,7 @@ body {
     height: 9vh;
     display: flex;
     justify-content: space-between;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
 }
 
 .contenedorlogo {
@@ -55,7 +56,7 @@ body {
 
 
 .lista-Header a {
-    color: antiquewhite;
+    color: #e3ede6;
     margin: 1px 4px;
     font-size: 14px;
     text-decoration: none;
@@ -91,18 +92,18 @@ a:hover {
     color: #7ea59e;
 }
 
-.btninicio  {
+.btninicio {
     background-color: #155e6a;
-    
+
     border: none;
     font-size: 20px;
     height: 100%;
-    
+
 }
 
-.btninicio a{
-text-decoration: none;
-color: antiquewhite;
+.btninicio a {
+    text-decoration: none;
+    color: antiquewhite;
 
 }
 
@@ -123,7 +124,7 @@ svg {
     .nombre-logo {
         display: none;
     }
-    
+
 
 
 }
@@ -145,15 +146,15 @@ svg {
 }
 
 .carousel-container {
-   padding: 0;
+    padding: 0;
     overflow: hidden;
     display: flex;
 }
 
 .carousel {
     display: flex;
-   
-   
+
+
 }
 
 .carousel img {

@@ -1,32 +1,47 @@
 body {
     display: grid;
-    grid-template-columns: 1fr 3fr 1fr;
-    grid-template-rows: auto 1fr;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr auto;
     grid-template-areas:
-        "header header header"
-        "nav main aside";
-    height: 100vh auto;
+        "header"
+        "main"
+        "footer";
+    height: 100vh;
     margin: 0;
     padding: 0;
-    background-color: #7ea59e;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-main {
+
+.main {
     grid-area: main;
     background: #7ea59e;
-    padding: 20px;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
 }
 
-aside {
-    grid-area: aside;
-    color: #e3ede6;
+.centered-section {
+    display: flex;
     padding: 10px;
-    background-color: #16485f;
+    width: 150vh;
+    height: auto;
+    background: #e3ede6;
+    flex-direction: column;
+    border: 1px solid #ccc;
+    align-items: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
-/*seccion header*/
-.header {
+footer {
+    grid-area: footer;
+    background-color: #062027;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+header {
     grid-area: header;
     background-color: #062027;
     color: white;
@@ -37,6 +52,7 @@ aside {
     position: sticky;
     top: 0;
     z-index: 1000;
+    
 }
 
 .contenedorlogo {
@@ -121,10 +137,17 @@ aside {
 
 }
 
-.svgnav {
+.svgnavh {
     fill: #e3ede6;
     width: auto;
     height: 60%;
+
+}
+
+.svgnav {
+    fill: #e3ede6;
+    width: auto;
+    height: 50%;
 
 }
 
@@ -143,114 +166,88 @@ aside {
 
 }
 
+.headermain {
 
-/* Nav */
-
-.conetedornav {
-
-    grid-area: nav;
-    display: flex;
     background-color: #16485f;
-    margin: 0 3vh 0 0;
-    padding: 0;
-    flex-direction: column;
-    align-items: center;
-
-
-}
-
-.psticky {
-    width: 100%;
-    position: sticky;
-    top: 59px;
-
-}
-
-.seccionnav {
-    width: 100%;
-    height: 80%;
-
-}
-
-.perfilnv {
+    color: #e3ede6;
     display: flex;
-    align-items: center;
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    background-color: transparent;
-    border: none;
-    text-decoration: none;
-}
+    height: 10vh;
+    width: 150vh;
 
-.seccionbtnv {
 
-    width: 100%;
+
 }
 
 .btnnav {
-    display: flex;
-    align-items: center;
-    border: none;
     background-color: transparent;
-    text-decoration: none;
-    margin: 3vh 0vh;
-    width: 100%;
-    height: 7vh;
+    width: 30vh;
+    border: none;
+
 }
 
-.fotoperfilp {
-    height: 8vh;
-    width: auto;
-    padding: 1vh;
+.btnnav:hover {
+
+    background-color: #155e6a;
 }
 
 .namep {
-    color: #e3ede6;
     margin: 0;
-    font-size: 18px;
-    padding: 5px 1px 1px 10px;
-}
-
-.namept {
-    font-size: 17px;
     color: #e3ede6;
-
 }
 
-.perfilnv:hover {
-    background-color: #155e6a;
+
+.mainpost {
+    display: grid;
+    grid:
+        "sidebar body" 2fr  /50vh 90vh;
+    gap: 10vh;
+   
 }
 
-.footer {
+.asidemain {
+    grid-area: sidebar;
+}
+
+.contpost {
+    
+    grid-area: body;
+    max-height: 80vh; 
+    overflow-y: auto; 
     display: flex;
-    background-color: transparent;
+    flex-direction: column;
+    align-items: center;
+
 }
 
-
-.btnnav:hover {
+.optionmian {
+    margin-top: 1vh;
     background-color: #155e6a;
-}
-
-
-.btnpopup:hover {
-    background-color: #7ea59e;
-}
-
-
-.boton-opcion:hover {
-    background-color: transparent;
-}
-
-.textfooter {
-    margin: 10vh 0vh 0vh 0vh;
-    align-items: flex-end;
     color: #e3ede6;
-
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 7vh;
+    width: 56vh;
+    text-decoration: none;
+    transition: text-decoration 0.3s;
 }
 
 
-/*main*/
+.optionmian :hover{
+
+    text-decoration: underline; 
+}
+
+.nameoptionname {
+    color: #e3ede6;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+
+.list-optionmain a:hover {
+    color: #7ea59e;
+}
 
 .contenedorArticulos {
     position: relative;
@@ -348,11 +345,8 @@ input[type="file"] {
     border: 1px solid #e3ede6;
     border-radius: 10px;
     padding: 10px;
-    margin: 10px;
-    width: 80vh;
-    position: relative;
-    left: 13vh;
-    top: -2vh;
+    margin:10px 10px 10px 15px;
+    width: 65vh;
     background-color: #e3ede6;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
 }
@@ -384,9 +378,11 @@ input[type="file"] {
 }
 
 .fotopublicada {
-    width: 526px;
-    height: 526px;
+    width: 426px;
+    height: 426px;
     border-radius: 5px;
+    align-items: center;
+    display: flex;
 
 }
 
@@ -405,21 +401,68 @@ input[type="file"] {
 }
 
 
-/*aside*/
 
-.contenedorhilos {
-    height: 45vh;
-    background-color: #155e6a;
-    margin: 0;
+.opctodo{
+
     padding: 0;
-    border-radius: 10px 10px;
-    position: sticky;
-    top: 70px;
+    margin: 0;
 
+}
+.Titulosub{
+
+height: 5vh;
+width: 55vh;
+background-color: #7ea59e;
+color: #062027;
+font-size: 26px;
+margin-top: 1vh;
+margin-bottom: 0;
+padding: 2px;
 
 }
 
+.Suboption{
+    padding-top: 1vh;
+background-color: #e3ede6;
+    height: 10vh;
+    width: 55vh;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #16485f;
+}
+
+
+.opcbtn{
+    margin-left: 1vh;
+    height: 10vh;
+    width: 55vh;
+
+}
+
+.opcbtn a{
+
+color: #062027;
+text-decoration: none;
+margin: 0;
+font-size: 20px;
+
+}
+
+.opcbtn p{
+
+    color: #062027;
+    text-decoration: none;
+    margin-top: 2px;
+    font-size: 14px;
+    
+    }
+.subimagen{
+    height: 8vh;
+    width: auto;
+}
+
 .btnpopup {
+ 
     background-color: #062027;
     color: #e3ede6;
     border: none;
@@ -428,49 +471,6 @@ input[type="file"] {
     height: 8vh;
 }
 
-
-
-.btnaside:hover {
-    background-color: #16485f;
-
-}
-
-.titutoaside {
-
-    color: #e3ede6;
-    padding-left: 10px;
-    padding-top: 10px;
-    font-size: 20px;
-    margin: 0;
-
-
-}
-
-.imgeneshilos {
-    height: 7vh;
-    width: auto;
-
-}
-
-.opcaside {
-    background-color: #155E6A;
-    padding: 1vh;
-}
-
-.btnaside {
-    display: flex;
-    border: none;
-    border-radius: 10px;
-    text-decoration: none;
-    justify-content: space-evenly;
-    width: 100%;
-    background-color: #155E6A;
-
-}
-
-
-.asidebtntext {
-    color: #e3ede6;
-    padding-left: 2px;
-    font-size: 13px;
+.btnpopup:hover {
+    background-color: #7ea59e;
 }
