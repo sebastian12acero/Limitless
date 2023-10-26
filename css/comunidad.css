@@ -206,6 +206,12 @@ header {
 
 .asidemain {
     grid-area: sidebar;
+    max-height: 70vh;
+    width: 65vh;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .contpost {
@@ -436,6 +442,17 @@ input[type="file"] {
     text-decoration: none;
     margin-top: 2px;
     font-size: 14px;
+
+}
+
+.opcbtn2 a {
+
+    color: #062027;
+    text-decoration: none;
+    margin-left: 2vh;
+    font-size: 20px;
+    
+
 
 }
 
