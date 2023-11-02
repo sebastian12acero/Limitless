@@ -106,7 +106,7 @@
 
 
 
-            <section class="contenedor-slider" x-data="{start: true, end: false}" style="padding-top: 50px;">
+            <section class="contenedor-slider" x-data="{start: true, end: false}" style="padding-top: 40px;">
                 <section class="contenido-slider" x-ref="slider"
                     x-on:scroll.debounce="$refs.slider.scrollLeft == 0 ? start = true : start = false; Math.abs(($refs.slider.scrollWidth - $refs.slider.offsetWidth) - $refs.slider.scrollLeft) < 5 ? end = true : end = false;">
                     <section class="item-slider">
@@ -165,30 +165,8 @@
                             <h2>Card 1</h2>
                         </div>
                     </section>
-                    <section class="item-slider">
-                        <img class="imagen-slider"
-                            src="https://img.freepik.com/fotos-premium/ilustracion-joystick-gamepad-controlador-juegos-cyberpunk_691560-5812.jpg"
-                            alt="Image">
-                        <div class="info-slider">
-                            <h2>Card 1</h2>
-                        </div>
-                    </section>
-                    <section class="item-slider">
-                        <img class="imagen-slider"
-                            src="https://img.freepik.com/fotos-premium/ilustracion-joystick-gamepad-controlador-juegos-cyberpunk_691560-5812.jpg"
-                            alt="Image">
-                        <div class="info-slider">
-                            <h2>Card 1</h2>
-                        </div>
-                    </section>
-                    <section class="item-slider">
-                        <img class="imagen-slider"
-                            src="https://img.freepik.com/fotos-premium/ilustracion-joystick-gamepad-controlador-juegos-cyberpunk_691560-5812.jpg"
-                            alt="Image">
-                        <div class="info-slider">
-                            <h2>Card 1</h2>
-                        </div>
-                    </section>
+                 
+                
 
                     <!-- Resto de las secciones aquí -->
                 </section>
