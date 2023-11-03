@@ -1,24 +1,32 @@
 body {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 2fr;
+
     grid-template-rows: auto 1fr auto;
+
     grid-template-areas:
-        "header"
-        "main"
-        "footer";
-    height: 100vh;
-    margin: 0;
-    padding: 0;
+        "header header"
+        "main aside"
+        "footer footer";
+    min-height: 100vh;
+
+    background-color: #e3ede6;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-
 .main {
     grid-area: main;
-    background: #7ea59e;
     padding: 5px;
     display: flex;
     justify-content: center;
+}
+
+aside {
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    grid-area: aside;
+    padding: 20px;
 }
 
 .centered-section {
@@ -147,7 +155,36 @@ header {
 .svgnav {
     fill: #e3ede6;
     width: auto;
-    height: 50%;
+    height: 40%;
+    margin-top: 1.5em;
+    margin-left: 1.2em;
+
+}
+
+.svgnav2 {
+    fill: #e3ede6;
+    width: auto;
+    height: 40%;
+    margin-top: 1.5em;
+    margin-left: -.9em;
+
+}
+
+.svgnav3 {
+    fill: #e3ede6;
+    width: auto;
+    height: 40%;
+    margin-top: -.6em;
+    margin-left: 1.2em;
+
+}
+
+.svgnav4 {
+    fill: #e3ede6;
+    width: auto;
+    height: 40%;
+    margin-top: -.9em;
+    margin-left: -1.2em;
 
 }
 
@@ -218,8 +255,6 @@ header {
 .contpost {
 
     grid-area: body;
-    max-height: 80vh;
-    overflow-y: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -452,7 +487,7 @@ input[type="file"] {
     text-decoration: none;
     margin-left: 2vh;
     font-size: 20px;
-    
+
 
 
 }
@@ -474,4 +509,110 @@ input[type="file"] {
 
 .btnpopup:hover {
     background-color: #7ea59e;
+}
+
+
+
+.up {
+    display: flex;
+    justify-content: flex-end;
+    /* Alinea el contenido a la derecha */
+    align-items: flex-end;
+    /* Alinea el contenido hacia abajo */
+    position: fixed;
+    bottom: 16vh;
+    right: 1vw;
+    flex-direction: row;
+    gap: 0.5em;
+    margin-bottom: 0.5em;
+    z-index: 100;
+    /* Ajusta la superposición en capas (opcional) */
+}
+
+.down {
+    display: flex;
+    position: sticky;
+    flex-direction: row;
+    gap: 0.5em;
+    position: fixed;
+    bottom: 2.7vh;
+    right: 1vw;
+    z-index: 100;
+}
+
+.card1 {
+    width: 90px;
+    height: 90px;
+    outline: none;
+    border: none;
+    background: #7ea59e;
+    border-radius: 90px 5px 5px 5px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    transition: .2s ease-in-out;
+}
+
+
+
+.card2 {
+    width: 90px;
+    height: 90px;
+    outline: none;
+    border: none;
+    background: #7ea59e;
+    border-radius: 5px 90px 5px 5px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    transition: .2s ease-in-out;
+}
+
+
+
+.card3 {
+    width: 90px;
+    height: 90px;
+    outline: none;
+    border: none;
+    background: #7ea59e;
+    border-radius: 5px 5px 5px 90px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    transition: .2s ease-in-out;
+}
+
+
+.card4 {
+    width: 90px;
+    height: 90px;
+    outline: none;
+    border: none;
+    background: #7ea59e;
+    border-radius: 5px 5px 90px 5px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    transition: .2s ease-in-out;
+}
+
+
+.card1:hover {
+    cursor: pointer;
+    scale: 1.1;
+    background-color: #155e6a;
+}
+
+.card2:hover {
+    cursor: pointer;
+    scale: 1.1;
+    background-color: #155e6a;
+}
+
+
+.card3:hover {
+    cursor: pointer;
+    scale: 1.1;
+    background-color: #155e6a;
+}
+
+
+
+.card4:hover {
+    cursor: pointer;
+    scale: 1.1;
+    background-color: #155e6a;
 }

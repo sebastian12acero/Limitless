@@ -135,16 +135,17 @@ a:hover {
         display: none;
     }
 
-
-
 }
+
+
+
 
 main {
     grid-area: main;
     display: flex;
     flex-direction: column;
-    
-   
+
+
 
 }
 
@@ -187,7 +188,7 @@ video {
 }
 
 .animated-shadow {
-    
+
     color: #e3ede6;
     font-size: 50px;
     height: 8vh;
@@ -285,7 +286,7 @@ video {
     display: flex;
     flex-direction: column;
     background-color: rgba(227, 237, 230, 0.9);
-   
+
 }
 
 
