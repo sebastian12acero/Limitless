@@ -149,3 +149,13 @@
   pointer-events: auto;
   cursor: pointer;
 }
+
+@media (max-width: 670px) {
+  .section-top{
+    width: 90vw;
+    height: 30vh;
+
+  }
+
+
+}
