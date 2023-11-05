@@ -38,7 +38,7 @@ header {
 
 
 .imagen-logo {
-    padding: 3px 5px;
+    padding: 0.188rem 0.313rem;
     height: 7vh;
     width: auto;
 
@@ -47,8 +47,8 @@ header {
 .nombre-logo {
 
     color: #e3ede6;
-    font-size: 20px;
-    padding: 3px 5px;
+    font-size: 1.25rem;
+    padding: 0.188rem 0.313rem;
     margin: 0;
 }
 
@@ -64,8 +64,8 @@ header {
 
 .lista-Header a {
     color: #e3ede6;
-    margin: 1px 4px;
-    font-size: 14px;
+    margin: 0.063rem 0.25rem;
+    font-size: 0.875rem;
     text-decoration: none;
 }
 
@@ -76,7 +76,7 @@ header {
     padding: 0;
     margin: 0;
     text-align: center;
-    flex-wrap: 10px;
+    flex-wrap: 0.625rem;
 }
 
 .btnopcionuno {
@@ -84,9 +84,9 @@ header {
     background-color: #062027;
     color: #e3ede6;
     border: none;
-    font-size: 20px;
+    font-size: 1.25;
     height: 100%;
-    padding: 10px;
+    padding: 0.625rem;
     text-decoration: none;
 
 }
@@ -103,7 +103,7 @@ a:hover {
     background-color: #155e6a;
 
     border: none;
-    font-size: 20px;
+    font-size: 1.25rem;
     height: 100%;
 
 }
@@ -153,7 +153,7 @@ a:hover {
     width: 100vw;
     height: 5vh;
     align-items: center;
-    font-size: 18px;
+    font-size: 1.125rem;
     color: #ffffff;
     background-color: #155e6a;
     text-decoration: none;
@@ -205,7 +205,7 @@ video {
     width: 50vW;
     height: 35vh;
     display: flex;
-    border-radius: 5px;
+    border-radius: 0.313rem;
     justify-content: center;
     flex-direction: column;
     color: #e3ede6;
@@ -215,19 +215,19 @@ video {
 
 
 .bg-5 {
-    padding: 10px;
+    padding: 0.625rem;
     background: transparent;
 }
 
 .animated-shadow {
 
     color: #e3ede6;
-    font-size: clamp(30px, 10vw, 50px);
+    font-size: clamp(1.875rem, 10vw, 3.125rem);
     height: 8vh;
-    margin: 5px;
+    margin: 0.313rem;
     width: 100%;
     left: 0;
-    letter-spacing: 5px;
+    letter-spacing: 0.313rem;
     text-transform: uppercase;
     width: 100%;
     animation: move linear 2000ms infinite;
@@ -311,7 +311,7 @@ video {
 
 .Mainsection2 {
     overflow-x: hidden;
-    border-radius: 5px;
+    border-radius: 0.313rem;
     width: 97.7vw;
     margin: 1vh;
     z-index: 2;
@@ -348,7 +348,7 @@ footer {
     grid-area: footer;
     background: #062027;
     color: #e3ede6;
-    padding: 10px;
+    padding: 0.625rem;
     display: flex;
     justify-content: center;
 }
@@ -357,13 +357,13 @@ footer {
 .footer-content ul {
 
     padding: 0;
-    margin-left: 60px;
+    margin-left: 3.75rem;
 
 }
 
 .footer-content ul li {
     display: inline;
-    margin-right: 20px;
+    margin-right: 1.25rem;
 }
 
 .footer-content ul li a {
@@ -391,9 +391,9 @@ footer {
         background-color: #062027;
         color: #e3ede6;
         border: none;
-        font-size: 20px;
+        font-size: 1.25rem;
         height: 100%;
-        padding: 10px;
+        padding: 0.625rem;
         text-decoration: none;
 
     }
@@ -437,14 +437,14 @@ footer {
     }
 
     .my_class {
-        font-size: 30px;
+        font-size: 1.875rem;
 
 
     }
 
     .t1 {
 
-        font-size: 25px;
+        font-size: 1.563rem;
     }
 
 
