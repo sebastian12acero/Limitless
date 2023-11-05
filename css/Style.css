@@ -1,9 +1,7 @@
 body {
     display: grid;
     grid-template-columns: 1fr;
-    /* Una sola columna */
     grid-template-rows: auto 1fr auto;
-    /* Tres filas: una para el header, una para el main y una para el footer */
     grid-template-areas:
         "header"
         "main"
@@ -59,7 +57,7 @@ header {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    padding: 10px;
+    padding: 0.625rem;
 
 
 }
@@ -124,7 +122,11 @@ a:hover {
 
 }
 
-@media (max-width: 671px) {
+.btn-header {
+    display: none;
+}
+
+@media (max-width: 670px) {
     .imagen-logo {
         text-align: center;
         height: 7vh auto;
@@ -135,10 +137,34 @@ a:hover {
         display: none;
     }
 
+    .btn-header {
+        display: block;
+        background-color: #062027;
+        color: #e3ede6;
+        border: none;
+        font-size: 20px;
+        height: 100%;
+        padding: 10px;
+        text-decoration: none;
+
+    }
+
+    .btn-header svg {
+
+        fill: #e3ede6;
+        width: auto;
+        height: 60%;
+    }
+
+    .contenedorlista {
+        display: none;
+    }
+
+    .Botonesheader {
+        display: none;
+    }
+
 }
-
-
-
 
 main {
     grid-area: main;
@@ -264,6 +290,55 @@ video {
             -1px 1px 0 #155e6a;
     }
 }
+
+
+
+
+
+
+
+/* Personaliza los elementos del menú desplegable */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: #155e6a;
+    /* Cambia el color de fondo del menú desplegable */
+    border: 1px solid #ccc;
+    /* Agrega un borde al menú desplegable */
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.custom-item {
+    display: block;
+    padding: 10px;
+    color: #ffffff;
+    /* Cambia el color del texto de los elementos del menú */
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    /* Agrega una transición para suavizar los cambios de color */
+}
+
+.custom-item:hover {
+    background-color: #FF5733;
+    /* Cambia el color de fondo al pasar el ratón sobre los elementos del menú */
+}
+
+/* Muestra el menú desplegable al hacer clic en el botón */
+.btn-custom:focus+.dropdown-menu {
+    display: block;
+}
+
+
+
+
 
 .text-2 {
 
