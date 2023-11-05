@@ -122,49 +122,72 @@ a:hover {
 
 }
 
+.headerrespon {
+    display: none;
+}
+
 .btn-header {
     display: none;
 }
 
-@media (max-width: 670px) {
-    .imagen-logo {
-        text-align: center;
-        height: 7vh auto;
-        width: auto;
-    }
 
-    .nombre-logo {
-        display: none;
-    }
 
-    .btn-header {
-        display: block;
-        background-color: #062027;
-        color: #e3ede6;
-        border: none;
-        font-size: 20px;
-        height: 100%;
-        padding: 10px;
-        text-decoration: none;
 
-    }
-
-    .btn-header svg {
-
-        fill: #e3ede6;
-        width: auto;
-        height: 60%;
-    }
-
-    .contenedorlista {
-        display: none;
-    }
-
-    .Botonesheader {
-        display: none;
-    }
+.dropdown-menu {
+    display: none;
+    position: fixed;
+    background-color: #155e6a;
+    /* Cambia el color de fondo del menú desplegable */
+    border: none;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    right: 0;
 
 }
+
+.listadoreas {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+
+   
+
+
+
+}
+
+.custom-item {
+    width: 100vw;
+    height: 5vh;
+    align-items: center;
+    font-size: 18px;
+    color: #ffffff;
+    background-color: #155e6a;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+
+}
+
+.custom-item:hover {
+    background-color: #7ea59e;
+    /* Cambia el color de fondo al pasar el ratón sobre los elementos del menú */
+}
+
+/* Muestra el menú desplegable al hacer clic en el botón */
+.btn-header:focus+.dropdown-menu {
+    display: block;
+
+}
+
+
+
+
+
+
+
 
 main {
     grid-area: main;
@@ -216,7 +239,7 @@ video {
 .animated-shadow {
 
     color: #e3ede6;
-    font-size: 50px;
+    font-size: clamp(30px, 10vw, 50px);
     height: 8vh;
     margin: 5px;
     width: 100%;
@@ -226,6 +249,7 @@ video {
     width: 100%;
     animation: move linear 2000ms infinite;
     z-index: 2
+    
 }
 
 /*Animación para rotar las sombras*/
@@ -291,64 +315,15 @@ video {
     }
 }
 
-
-
-
-
-
-
-/* Personaliza los elementos del menú desplegable */
-.dropdown {
-    position: relative;
-    display: inline-block;
-}
-
-.dropdown-menu {
-    display: none;
-    position: absolute;
-    background-color: #155e6a;
-    /* Cambia el color de fondo del menú desplegable */
-    border: 1px solid #ccc;
-    /* Agrega un borde al menú desplegable */
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.custom-item {
-    display: block;
-    padding: 10px;
-    color: #ffffff;
-    /* Cambia el color del texto de los elementos del menú */
-    text-decoration: none;
-    cursor: pointer;
-    transition: background-color 0.3s;
-    /* Agrega una transición para suavizar los cambios de color */
-}
-
-.custom-item:hover {
-    background-color: #FF5733;
-    /* Cambia el color de fondo al pasar el ratón sobre los elementos del menú */
-}
-
-/* Muestra el menú desplegable al hacer clic en el botón */
-.btn-custom:focus+.dropdown-menu {
-    display: block;
-}
-
-
-
-
-
 .text-2 {
 
-    font-size: 20px;
+    font-size: 1.25rem;
     margin: 0;
 
 }
 
 .text-2P {
-    padding: 10px;
+    padding: 0.625rem;
 
 }
 
@@ -410,4 +385,58 @@ ul li {
 ul li a {
     text-decoration: none;
     color: #fff;
+}
+
+@media (max-width: 670px) {
+
+
+    .imagen-logo {
+        text-align: center;
+        height: 6vh ;
+        width: auto;
+    }
+
+ 
+
+    .headerrespon {
+        display: block;
+    }
+
+    .btn-header {
+        display: block;
+        background-color: #062027;
+        color: #e3ede6;
+        border: none;
+        font-size: 20px;
+        height: 100%;
+        padding: 10px;
+        text-decoration: none;
+
+    }
+
+    .btn-header svg {
+
+        fill: #e3ede6;
+        width: auto;
+        height: 60%;
+    }
+
+    .contenedorlista {
+        display: none;
+    }
+
+    .Botonesheader {
+        display: none;
+    }
+
+
+    .containertext{
+        width: 97vW;
+        height: 50vh;
+
+
+    }
+
+
+
 }
