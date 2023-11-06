@@ -26,7 +26,6 @@ aside {
 
 }
 
-
 nav {
     grid-area: nav;
     width: 35vw;
@@ -388,7 +387,7 @@ input[type="file"] {
     border-radius: 0.625rem;
     padding: 0.625rem;
     margin: 0.625rem 0.625rem 0.625rem 1.125rem;
-    width: 37vw;
+    width: 32vw;
     background-color: #e3ede6;
     box-shadow: 0 0 0.625rem rgba(0, 0, 0, 0.4);
 }
@@ -420,10 +419,13 @@ input[type="file"] {
 }
 
 .fotopublicada {
-    width: 26.625rem;
-    height: 26.625rem;
+    align-items: center;
+    max-width: 100%; /* Ajusta el ancho máximo a 100% del contenedor */
+    height: 29.625rem; /* Ajusta la altura automáticamente */
     border-radius: 0.313rem;
-    margin-left: 5vh;
+    display: block;
+    margin: 0 auto; /* Centra horizontalmente */
+    
 
 }
 
