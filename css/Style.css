@@ -17,7 +17,7 @@ body {
 header {
     grid-area: header;
     background-color: #062027;
-    color: white;
+    color:#e3ede6;
     padding: 0;
     height: 9vh;
     display: flex;
@@ -101,7 +101,6 @@ a:hover {
 
 .btninicio {
     background-color: #155e6a;
-
     border: none;
     font-size: 1.25rem;
     height: 100%;
@@ -154,7 +153,7 @@ a:hover {
     height: 5vh;
     align-items: center;
     font-size: 1.125rem;
-    color: #ffffff;
+    color:#e3ede6;
     background-color: #155e6a;
     text-decoration: none;
     border: none;
@@ -165,7 +164,7 @@ a:hover {
 
 .custom-item:hover {
     background-color: #7ea59e;
-  
+
 }
 
 
@@ -368,7 +367,7 @@ footer {
 
 .footer-content ul li a {
     text-decoration: none;
-    color: #fff;
+    color:#e3ede6;
 }
 
 @media (max-width: 670px) {
@@ -448,4 +447,7 @@ footer {
     }
 
 
+    .footer-content ul li a {
+      font-size:0.625rem;
+    }
 }

@@ -21,8 +21,8 @@
 }
 
 :root {
-  --color-principal: #fff;
-  --color-fondo: #141e27;
+  --color-principal:#e3ede6;
+  --color-fondo: #062027;
 }
 
 * {
@@ -135,7 +135,7 @@
   border: 0;
   border-radius: 2rem;
   background: var(--color-principal);
-  color: #203239;
+  color: #062027;
   padding: 0.5rem 1rem;
   font-size: 0.75rem;
   line-height: 1;
