@@ -19,13 +19,15 @@
             <img class="imagen-logo" src="img/Logo.svg" alt="logo de la marca">
             <p class="nombre-logo">PlayPalace</p>
         </section>
+
         <section class="contenedorlista">
-            <ul class="lista-Header">
+            <ul class="lista-Header " id="opciones">
                 <a href="Comunidad.html">Comunidad</a>
-                <a href="">Disposivitos</a>
+                <a href="">Dispositivos</a>
                 <a href="">Juegos</a>
             </ul>
         </section>
+
         <section class="Botonesheader">
             <button class="btnopcionuno">
                 <a> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
@@ -46,7 +48,29 @@
                 <a href="Login.html">Iniciar sesión</a>
             </button>
         </section>
+        <section class="headerrespon">
+            <button class="btn-header">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list"
+                    viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                        d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+                </svg>
+            </button>
 
+            <ul class="dropdown-menu">
+                <section class="listadoreas" style="display: flex;">
+                    <li><button class="custom-item" type="button"> Buscar</button></li>
+                    <li><button class="custom-item" type="button"> <a href="Login.html"> Iniciar Sesion</a> </button>
+                    </li>
+                    <li><button class="custom-item" type="button">Carro de Compras</button></li>
+                    <li><button class="custom-item" type="button"> <a href="Comunidad.html"> Comunidad</a> </button>
+                    </li>
+                    <li><button class="custom-item" type="button">Dispositivos</button></li>
+                    <li><button class="custom-item" type="button">Juegos</button></li>
+                </section>
+            </ul>
+
+        </section>
     </header>
 
 
@@ -84,9 +108,9 @@
                 <source src="img/202310272000.mp4" type="video/mp4">
                 Tu navegador no admite el elemento de video.
             </video>
-            <section class="containertext ">
+            <section class="containertext">
                 <section class="bg-5">
-                    <h1 class="animated-shadow">Bienvenido</h1>
+                    <h1 class="animated-shadow"> Bienvenido</h1>
                 </section>
                 <section class="text-2P">
                     <p class="text-2">Hemos rediseñado la forma de consultar la información de los videojuegos más
@@ -95,7 +119,6 @@
                         claves y mucho más al
                         acceder a cualquiera de los juegos en nuestro catalogo. </p>
                 </section>
-
 
             </section>
         </section>
@@ -111,30 +134,26 @@
             <section class="section-top">
                 <img class="section-img-juegos"
                     src="https://cdn-products.eneba.com/resized-products/s29Db6ZBVLneuD0t66qnYRamvGDP3p8chLz-3IomxcU_350x200_1x-0.jpeg"
-                    alt="">
+                    alt="#">
                 <img class="section-img-juegos"
                     src="https://cdn-products.eneba.com/resized-products/yUHzd5bpM8-3KbrLgvHWypfijjUVGrLhRgRuKgt8DKs_350x200_1x-0.jpg"
-                    alt="">
+                    alt="#">
                 <img class="section-img-juegos"
                     src="https://cdn-products.eneba.com/resized-products/6M1qP76B-j6vdX0T4bFCHgJeX99MaKBpXFxbpif1MqY_350x200_1x-0.jpeg"
-                    alt="">
+                    alt="#">
                 <img class="section-img-juegos"
                     src="https://cdn-products.eneba.com/resized-products/94BY1T7noGspA1q8TkGtsy8TJ6shJ2pYFx9crJ1gPNg_350x200_1x-0.jpeg"
-                    alt="">
+                    alt="#">
                 <img class="section-img-juegos"
                     src="https://cdn-products.eneba.com/resized-products/xAg5W0iyjWabOPfKAeaL8hGr2YAGK_BrGWbX3uDWLuE_350x200_1x-0.jpg"
-                    alt="">
+                    alt="#">
             </section>
-
-
             <section class="seccionmnt">
-                <h2 class="my_class"> Juegos </h2>
-                <p class="t1"> Estas son las mejores juegos de este año </p>
+                <h2 class="my_class"> Mejores consolas </h2>
+                <p class="t1"> Estas son las mejores consolas de este año </p>
             </section>
 
-
-
-            <section class="contenedor-slider" x-data="{start: true, end: false}" style="padding-top: 50px;">
+            <section class="contenedor-slider" x-data="{start: true, end: false}" style="padding-top: 40px;">
                 <section class="contenido-slider" x-ref="slider"
                     x-on:scroll.debounce="$refs.slider.scrollLeft == 0 ? start = true : start = false; Math.abs(($refs.slider.scrollWidth - $refs.slider.offsetWidth) - $refs.slider.scrollLeft) < 5 ? end = true : end = false;">
                     <section class="item-slider">
@@ -193,31 +212,6 @@
                             <h2>Card 1</h2>
                         </div>
                     </section>
-                    <section class="item-slider">
-                        <img class="imagen-slider"
-                            src="https://img.freepik.com/fotos-premium/ilustracion-joystick-gamepad-controlador-juegos-cyberpunk_691560-5812.jpg"
-                            alt="Image">
-                        <div class="info-slider">
-                            <h2>Card 1</h2>
-                        </div>
-                    </section>
-                    <section class="item-slider">
-                        <img class="imagen-slider"
-                            src="https://img.freepik.com/fotos-premium/ilustracion-joystick-gamepad-controlador-juegos-cyberpunk_691560-5812.jpg"
-                            alt="Image">
-                        <div class="info-slider">
-                            <h2>Card 1</h2>
-                        </div>
-                    </section>
-                    <section class="item-slider">
-                        <img class="imagen-slider"
-                            src="https://img.freepik.com/fotos-premium/ilustracion-joystick-gamepad-controlador-juegos-cyberpunk_691560-5812.jpg"
-                            alt="Image">
-                        <div class="info-slider">
-                            <h2>Card 1</h2>
-                        </div>
-                    </section>
-
                     <!-- Resto de las secciones aquí -->
                 </section>
                 <section class="nav-slider" style="display: flex;justify-content: center;">
@@ -229,14 +223,10 @@
                         x-bind:class="end ? '' : 'boton-nav-slider--activo'">Next</button>
                 </section>
             </section>
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/alpinejs/3.10.2/cdn.js"></script>
-
 
         </section>
 
-
     </main>
-
 
     <footer>
         <div class="footer-content">
@@ -248,9 +238,9 @@
         </div>
     </footer>
 
-
 </body>
-<script src="Js/js.js"></script>
+<script src="Js/Responsive.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/alpinejs/3.10.2/cdn.js"></script>
 <script src="Js/Js-daniel.js"></script>
 
 </html>

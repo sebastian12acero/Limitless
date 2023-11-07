@@ -17,207 +17,270 @@
             <img class="imagen-logo" src="img/Logo.svg" alt="logo de la marca">
             <p class="nombre-logo">PlayPalace</p>
         </section>
+
         <section class="contenedorlista">
-            <ul class="lista-Header">
+            <ul class="lista-Header " id="opciones">
                 <a href="index.html">Inicio</a>
-                <a href="">Disposivitos</a>
+                <a href="">Dispositivos</a>
                 <a href="">Juegos</a>
             </ul>
         </section>
+
         <section class="Botonesheader">
             <button class="btnopcionuno">
-                <a class="btnheader"> <svg class="svgnavh" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                        fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                <a> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-search" viewBox="0 0 16 16">
                         <path
                             d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
                     </svg></a>
             </button>
             <button class="btnopcionuno">
-                <a class="btnheader"><svg class="svgnavh" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                        fill="currentColor" class="bi bi-cart2" viewBox="0 0 16 16">
+                <a><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-cart2" viewBox="0 0 16 16">
                         <path
                             d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l1.25 5h8.22l1.25-5H3.14zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z" />
                     </svg></a>
             </button>
 
             <button class="btninicio">
-                <a class="btnheader" href="#">Nombre usuario</a>
+                <a href="Login.html">Iniciar sesión</a>
             </button>
+        </section>
+        <section class="headerrespon">
+            <button class="btn-header">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list"
+                    viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                        d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+                </svg>
+            </button>
+
+            <ul class="dropdown-menu">
+                <section class="listadoreas" >
+                    <button class="custom-item" > Buscar</button>
+                    <button class="custom-item"><a href="Login.html"> Iniciar Sesion</a> </button>
+                    <button class="custom-item">Carro de Compras</button>
+                    <button class="custom-item"> <a href="index.html"> Inicio</a> </button>
+                    <button class="custom-item">Dispositivos</button>
+                    <button class="custom-item">Juegos</button>
+                </section>
+            </ul>
+
         </section>
     </header>
 
-    <main class="main">
-        <section class="centered-section">
-            <section class="headermain">
+    <aside>
 
-                <button class="btnnav">
-                    <svg class="svgnav" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                        class="bi bi-house" viewBox="0 0 16 16">
-                        <path
-                            d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L2 8.207V13.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V8.207l.646.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.707 1.5ZM13 7.207V13.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V7.207l5-5 5 5Z" />
-                    </svg>
-                    <p class="namep">Inicio </p>
-                </button>
-
-                <button class="btnnav">
+        <section>
+            <section class="up">
+                <button class="card1">
                     <svg class="svgnav" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                         class="bi bi-people" viewBox="0 0 16 16">
                         <path
                             d="M15 14s1 0 1-1-1-4-5-4-5 3-5 4 1 1 1 1h8Zm-7.978-1A.261.261 0 0 1 7 12.996c.001-.264.167-1.03.76-1.72C8.312 10.629 9.282 10 11 10c1.717 0 2.687.63 3.24 1.276.593.69.758 1.457.76 1.72l-.008.002a.274.274 0 0 1-.014.002H7.022ZM11 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4Zm3-2a3 3 0 1 1-6 0 3 3 0 0 1 6 0ZM6.936 9.28a5.88 5.88 0 0 0-1.23-.247A7.35 7.35 0 0 0 5 9c-4 0-5 3-5 4 0 .667.333 1 1 1h4.216A2.238 2.238 0 0 1 5 13c0-1.01.377-2.042 1.09-2.904.243-.294.526-.569.846-.816ZM4.92 10A5.493 5.493 0 0 0 4 13H1c0-.26.164-1.03.76-1.724.545-.636 1.492-1.256 3.16-1.275ZM1.5 5.5a3 3 0 1 1 6 0 3 3 0 0 1-6 0Zm3-2a2 2 0 1 0 0 4 2 2 0 0 0 0-4Z" />
                     </svg>
-                    <p class="namep">Amigos</p>
                 </button>
-
-                <button class="btnnav">
-                    <svg class="svgnav" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                <button class="card2">
+                    <svg class="svgnav2" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                         class="bi bi-bell" viewBox="0 0 16 16">
                         <path
                             d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2zM8 1.918l-.797.161A4.002 4.002 0 0 0 4 6c0 .628-.134 2.197-.459 3.742-.16.767-.376 1.566-.663 2.258h10.244c-.287-.692-.502-1.49-.663-2.258C12.134 8.197 12 6.628 12 6a4.002 4.002 0 0 0-3.203-3.92L8 1.917zM14.22 12c.223.447.481.801.78 1H1c.299-.199.557-.553.78-1C2.68 10.2 3 6.88 3 6c0-2.42 1.72-4.44 4.005-4.901a1 1 0 1 1 1.99 0A5.002 5.002 0 0 1 13 6c0 .88.32 4.2 1.22 6z" />
                     </svg>
-                    <p class="namep">Notificaciones</p>
                 </button>
-
-                <button class="btnnav">
-                    <svg class="svgnav" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+            </section>
+            <section class="down">
+                <button class="card3">
+                    <svg class="svgnav3" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                         class="bi bi-calendar-check" viewBox="0 0 16 16">
                         <path
                             d="M10.854 7.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7.5 9.793l2.646-2.647a.5.5 0 0 1 .708 0z" />
                         <path
                             d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z" />
                     </svg>
-                    <p class="namep">Eventos</p>
                 </button>
-
-                <button class="btnnav">
-                    <svg class="svgnav" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                <button class="card4">
+                    <svg class="svgnav4" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                         class="bi bi-bookmark" viewBox="0 0 16 16">
                         <path
                             d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5V2zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1H4z" />
                     </svg>
-                    <p class="namep">Guardado</p>
                 </button>
+            </section>
+        </section>
+    </aside>
+    <nav>
 
+        <section class="navmain">
 
+            <section class="publicaciones">
+                <button class="btnpopup" id="abrir-popup">Crea Tu Hilo </button>
+            </section>
+
+            <section class="opctodo">
+
+                <h1 class="Titulosub">Videojuegos </h1>
+                <section class="Suboption">
+                    <img class="subimagen" src="img/juego.png" alt="iconojuego">
+                    <section class="opcbtn">
+                        <a href=""> Videojuegos en general</a>
+                        <p> <em>Temas sobre juegos en general. Lanzamientos, actualidad, preguntas... </em></p>
+                    </section>
+                </section>
+                <section class="Suboption">
+                    <img class="subimagen" src="img/juego2.png" alt="iconojuego">
+                    <section class="opcbtn">
+                        <a href=""> Videojuegos Nuevos</a>
+                        <p> <em> Encuentra publicaciones de video juegos nuevos </em>
+                        </p>
+                    </section>
+                </section>
+                <section class="Suboption">
+                    <img class="subimagen" src="img/juego3.png" alt="iconojuego">
+                    <section class="opcbtn">
+                        <a href=""> Noticias y actualidad</a>
+                        <p> <em>Tribuna abierta para comentar las noticias del mundo del videojuego. </em></p>
+                    </section>
+                </section>
 
             </section>
 
-            <section class="mainpost">
-                <section class="asidemain">
+            <section class="opctododos">
 
-                    <section class="publicaciones">
-                        <button class="btnpopup" id="abrir-popup">Crea Tu Hilo </button>
-                        <section id="popup" class="popup">
-                            <section class="popup-content">
-                                <textarea class="textapublicar" id="texto-publicacion" maxlength="80"
-                                    placeholder="Escribe tu publicación aquí"> </textarea>
-                                <input class="btninsertar" type="file" id="imagen-publicacion" accept="image/*">
-                                <button id="publicar">Publicar</button>
-                                <button id="cerrar-popup">Cerrar</button>
-                            </section>
-                        </section>
-                    </section>
-
-                    <section class="opctodo">
-
-                        <h1 class="Titulosub">Videojuegos </h1>
-                        <section class="Suboption">
-                            <img class="subimagen" src="img/juego.png" alt="iconojuego">
-                            <section class="opcbtn">
-                                <a href=""> Videojuegos en general</a>
-                                <p> <em>Temas sobre juegos en general. Lanzamientos, actualidad, preguntas... </em></p>
-                            </section>
-                        </section>
-                        <section class="Suboption">
-                            <img class="subimagen" src="img/juego2.png" alt="iconojuego">
-                            <section class="opcbtn">
-                                <a href=""> Videojuegos Nuevos</a>
-                                <p> <em> Encuentra publicaciones de video juegos nuevos </em>
-                                </p>
-                            </section>
-                        </section>
-                        <section class="Suboption">
-                            <img class="subimagen" src="img/juego3.png" alt="iconojuego">
-                            <section class="opcbtn">
-                                <a href=""> Noticias y actualidad</a>
-                                <p> <em>Tribuna abierta para comentar las noticias del mundo del videojuego. </em></p>
-                            </section>
-                        </section>
+                <h1 class="Titulosub">Consolas </h1>
+                <section class="Suboption">
+                    <img class="subimagen" src="img/xbox.png" alt="iconojuego">
+                    <section class="opcbtn2">
+                        <a href=""> Comunidad Xbox</a>
 
                     </section>
-
-                    <section class="opctododos">
-
-                        <h1 class="Titulosub">Consolas </h1>
-                        <section class="Suboption">
-                            <img class="subimagen" src="img/xbox.png" alt="iconojuego">
-                            <section class="opcbtn2">
-                                <a href=""> Comunidad Xbox</a>
-
-                            </section>
-                        </section>
-                        <section class="Suboption">
-                            <img class="subimagen" src="img/nintendo.png" alt="iconojuego">
-                            <section class="opcbtn2">
-                                <a href=""> Comunidad Nintendo</a>
-
-                            </section>
-                        </section>
-                        <section class="Suboption">
-                            <img class="subimagen" src="img/play.png" alt="iconojuego">
-                            <section class="opcbtn2">
-                                <a href=""> Comunidad Playstation </a>
-
-                            </section>
-                        </section>
+                </section>
+                <section class="Suboption">
+                    <img class="subimagen" src="img/nintendo.png" alt="iconojuego">
+                    <section class="opcbtn2">
+                        <a href=""> Comunidad Nintendo</a>
 
                     </section>
-                    
+                </section>
+                <section class="Suboption">
+                    <img class="subimagen" src="img/play.png" alt="iconojuego">
+                    <section class="opcbtn2">
+                        <a href=""> Comunidad Playstation </a>
 
+                    </section>
                 </section>
 
-
-                <section id="contenido-principal" class="contpost">
-
-                    <section class="publicacion">
-                        <section class="publicacion-header">
-                            <img class="minfoto" src="img/perfil.png" alt="perfil">
-                            <p class="titulopubli">Nombre de Usuario</p>
-                        </section>
-                        <p class="publicacion-texto">La saga Halo es el mejor juego de la historia </p>
-                        <img class="fotopublicada" src="img/Halo.jpg" alt="Imagen halo">
-                        <section class="publicacion-opciones">
-                            <button class="boton-opcion">Me gusta</button>
-                            <button class="boton-opcion">Comentar</button>
-                            <button class="boton-opcion">Compartir</button>
-                        </section>
-                    </section>
-                    <section class="publicacion">
-                        <section class="publicacion-header">
-                            <img class="minfoto" src="img/perfil.png" alt="perfil">
-                            <p class="titulopubli">Nombre de Usuario</p>
-                        </section>
-                        <p class="publicacion-texto">La saga Halo es el mejor juego de la historia </p>
-                        <img class="fotopublicada" src="img/starfiel.jpg" alt="Imagen halo">
-                        <section class="publicacion-opciones">
-                            <button class="boton-opcion">Me gusta</button>
-                            <button class="boton-opcion">Comentar</button>
-                            <button class="boton-opcion">Compartir</button>
-                        </section>
-                    </section>
-
-                    
-                </section>
-                
             </section>
 
 
         </section>
+    </nav>
+
+    <section class="bg-stars">
+        <span class="star"></span>
+        <span class="star"></span>
+        <span class="star"></span>
+        <span class="star"></span>
+    </section>
+    <main class="main">
+
+        <section class="button-container">
+            <button id="abrir-popup" class="button1">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="bi bi-pencil-square" viewBox="0 0 16 16">
+                    <path
+                        d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z" />
+                    <path fill-rule="evenodd"
+                        d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5v11z" />
+                </svg>
+            </button>
+            <button class="button1">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-people"
+                    viewBox="0 0 16 16">
+                    <path
+                        d="M15 14s1 0 1-1-1-4-5-4-5 3-5 4 1 1 1 1h8Zm-7.978-1A.261.261 0 0 1 7 12.996c.001-.264.167-1.03.76-1.72C8.312 10.629 9.282 10 11 10c1.717 0 2.687.63 3.24 1.276.593.69.758 1.457.76 1.72l-.008.002a.274.274 0 0 1-.014.002H7.022ZM11 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4Zm3-2a3 3 0 1 1-6 0 3 3 0 0 1 6 0ZM6.936 9.28a5.88 5.88 0 0 0-1.23-.247A7.35 7.35 0 0 0 5 9c-4 0-5 3-5 4 0 .667.333 1 1 1h4.216A2.238 2.238 0 0 1 5 13c0-1.01.377-2.042 1.09-2.904.243-.294.526-.569.846-.816ZM4.92 10A5.493 5.493 0 0 0 4 13H1c0-.26.164-1.03.76-1.724.545-.636 1.492-1.256 3.16-1.275ZM1.5 5.5a3 3 0 1 1 6 0 3 3 0 0 1-6 0Zm3-2a2 2 0 1 0 0 4 2 2 0 0 0 0-4Z" />
+                </svg>
+            </button>
+            <button class="button1">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bell"
+                    viewBox="0 0 16 16">
+                    <path
+                        d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2zM8 1.918l-.797.161A4.002 4.002 0 0 0 4 6c0 .628-.134 2.197-.459 3.742-.16.767-.376 1.566-.663 2.258h10.244c-.287-.692-.502-1.49-.663-2.258C12.134 8.197 12 6.628 12 6a4.002 4.002 0 0 0-3.203-3.92L8 1.917zM14.22 12c.223.447.481.801.78 1H1c.299-.199.557-.553.78-1C2.68 10.2 3 6.88 3 6c0-2.42 1.72-4.44 4.005-4.901a1 1 0 1 1 1.99 0A5.002 5.002 0 0 1 13 6c0 .88.32 4.2 1.22 6z" />
+                </svg>
+            </button>
+            <button class="button1">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="bi bi-calendar-check" viewBox="0 0 16 16">
+                    <path
+                        d="M10.854 7.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7.5 9.793l2.646-2.647a.5.5 0 0 1 .708 0z" />
+                    <path
+                        d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z" />
+                </svg>
+            </button>
+
+            <button class="button1">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="bi bi-bookmark" viewBox="0 0 16 16">
+                    <path
+                        d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5V2zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1H4z" />
+                </svg>
+            </button>
+            <button class="button1">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list"
+                    viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                        d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+                </svg>
+            </button>
+
+        </section>
+
+        <section class="mainpost">
+            <section id="contenido-principal" class="contpost">
+                <section class="publicacion">
+                    <section class="publicacion-header">
+                        <img class="minfoto" src="img/perfil.png" alt="perfil">
+                        <p class="titulopubli">Nombre de Usuario</p>
+                    </section>
+                    <p class="publicacion-texto">La saga Halo es el mejor juego de la historia </p>
+                    <img class="fotopublicada" src="img/Halo.jpg" alt="Imagen halo">
+                    <section class="publicacion-opciones">
+                        <button class="boton-opcion">Me gusta</button>
+                        <button class="boton-opcion">Comentar</button>
+                        <button class="boton-opcion">Compartir</button>
+                    </section>
+                </section>
+                <section class="publicacion">
+                    <section class="publicacion-header">
+                        <img class="minfoto" src="img/perfil.png" alt="perfil">
+                        <p class="titulopubli">Nombre de Usuario</p>
+                    </section>
+                    <p class="publicacion-texto">La saga Halo es el mejor juego de la historia </p>
+                    <img class="fotopublicada" src="img/starfiel.jpg" alt="Imagen halo">
+                    <section class="publicacion-opciones">
+                        <button class="boton-opcion">Me gusta</button>
+                        <button class="boton-opcion">Comentar</button>
+                        <button class="boton-opcion">Compartir</button>
+                    </section>
+                </section>
 
 
+            </section>
+
+        </section>
+        <section id="popup" class="popup">
+            <section class="popup-content">
+                <textarea class="textapublicar" id="texto-publicacion" maxlength="80"
+                    placeholder="Escribe tu publicación aquí"> </textarea>
+                <input class="btninsertar" type="file" id="imagen-publicacion" accept="image/*">
+                <button id="publicar">Publicar</button>
+                <button id="cerrar-popup">Cerrar</button>
+            </section>
+        </section>
     </main>
-    <footer> Limitles © 2023</footer>
+
 
     <script src="Js/comunidad.js"></script>
+
 
 </body>
 
