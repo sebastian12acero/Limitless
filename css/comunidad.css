@@ -18,6 +18,8 @@ body {
 
 }
 
+
+
 aside {
     display: flex;
     justify-content: end;
@@ -178,16 +180,13 @@ a:hover {
     background-color: #155e6a;
     text-decoration: none;
     border: none;
-    cursor: pointer;
     transition: background-color 0.3s;
 
 }
-
-.custom-item:hover {
-    background-color: #7ea59e;
-
+.custom-item a{
+    text-decoration: none;
+    color:#e3ede6;
 }
-
 
 .btn-header:focus+.dropdown-menu {
     display: block;
@@ -753,7 +752,7 @@ border-top-left-radius: 8px;
 .button-container {
     position: fixed;
     top: 90vh;
-    z-index: 1000000;
+    z-index: 10;
     display: none;
     background-color: #155e6a;
     width: 98vw;
@@ -767,6 +766,7 @@ border-top-left-radius: 8px;
   .button1 {
     outline: 0 ;
     border: 0 ;
+    z-index: 12;
     width: 40px;
     height: 40px;
     border-radius: 50%;
@@ -870,6 +870,7 @@ border-top-left-radius: 8px;
 
     .button-container{
         display: flex;
+       
     }
 
     .opctodo{
@@ -933,5 +934,18 @@ border-top-left-radius: 8px;
         height: 4rem; /* Ajusta la altura del textarea */
     }
 
+    .custom-item, .button1 {
+        background-color: transparent;
+        color: inherit;
+        border: inherit;
+        font-size: inherit;
+        height: inherit;
+        padding: inherit;
+        text-decoration: inherit;
+
 }
 
+
+
+
+}

@@ -93,21 +93,3 @@ publicar.addEventListener('click', () => {
 });
 
 
-function mostrarNuevoBoton() {
-    const seccion = document.getElementById("miSeccion");
-    const botonExistente = document.getElementById("mostrarBoton");
-    
-    // Crear un nuevo botón
-    const nuevoBoton = document.createElement("button");
-    nuevoBoton.id = "nuevoBoton";
-    nuevoBoton.textContent = "Nuevo Botón";
-    nuevoBoton.onclick = function() {
-        alert("¡Nuevo botón presionado!");
-    };
-
-    // Agregar el nuevo botón a la sección
-    seccion.appendChild(nuevoBoton);
-
-    // Eliminar el botón existente
-    botonExistente.style.display = "none";
-}
