@@ -16,8 +16,17 @@ const validateEmail = async (emailIngresado) => {
 
     return true
 }
+const validateVideogame = async (juegoIngresado) => {
+    const gameExist = await Videogame.find({ name: juegoIngresado })
+    if (gameExist.length > 0) {
+        throw new Error("El juego ya existe")
+    }
+
+    return true
+}
 
 module.exports = {
     validateAge,
-    validateEmail
+    validateEmail,
+    validateVideogame
 }
