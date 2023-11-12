@@ -13,7 +13,7 @@
 
 </head>
 
-<body class="main" >
+<body class="main">
     <header class="header" id="contenido1">
         <section class="contenedorlogo">
             <img class="imagen-logo" src="img/Logo.svg" alt="logo de la marca">
@@ -36,7 +36,7 @@
                             d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
                     </svg></a>
             </button>
-            <button class="btnopcionuno" id="openCarritoDAN" >
+            <button class="btnopcionuno" id="openCarritoDAN">
                 <a><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                         class="bi bi-cart2" viewBox="0 0 16 16">
                         <path
@@ -74,34 +74,40 @@
     </header>
 
 
-    <main >
-        <section class="mainDAN" id="mainDAN" >
+    <main>
+        <section class="mainDAN" id="mainDAN">
             <!-- Carrito Daniel -->
-            
+
             <div id="modal_container_DAN" class="modal-container-DAN">
                 <div class="caja_DAN">
-                    <div class="modalDAN" id="modal_DAN" >
-                        <section >
+                    <div class="modalDAN" id="modal_DAN">
+                        <section>
                             <h1> Item 1 </h1>
-                            <div class="modalDAN-Pic"> <img src="img/Fifa-14.jpg" > <p> Fifa 14 Unlocked </p> <br> <p>US$200</p> <br> <p> Quantity : 1</p> <br> </div>
+                            <div class="modalDAN-Pic"> <img src="img/Fifa-14.jpg">
+                                <p> Fifa 14 Unlocked </p> <br>
+                                <p>US$200</p> <br>
+                                <p> Quantity : 1</p> <br>
+                            </div>
                             <button id="" class="closeCarritoDAN-class">Seguir con la compra</button>
                             <button id="" class="closeCarritoDAN-class">Vaciar carrito</button>
                         </section>
                     </div>
-                    <div class="modalDAN1" id="modal_DAN" >
-                        <section >
+                    <div class="modalDAN1" id="modal_DAN">
+                        <section>
                             <h1>Sub-Total</h1>
-                            <div class="modalDAN-Pic" > <h2> US$200 </h2> </div>
+                            <div class="modalDAN-Pic">
+                                <h2> US$200 </h2>
+                            </div>
                             <button id="" class="closeCarritoDAN-class1">Proceder al pago</button>
                         </section>
                     </div>
-                    <div class="btncerrar_container" id="closeCarritoDAN"> 
+                    <div class="btncerrar_container" id="closeCarritoDAN">
                     </div>
                 </div>
             </div>
             <!--- Final Carrito Daniel -->
         </section>
-    </section>
+        </section>
 
         <section class="video-section">
             <video autoplay loop muted>
@@ -153,7 +159,7 @@
                 <p class="t1"> Estas son las mejores consolas de este año </p>
             </section>
 
-            <section class="contenedor-slider" x-data="{start: true, end: false}" style="padding-top: 40px;">
+            <!-- <section class="contenedor-slider" x-data="{start: true, end: false}" style="padding-top: 40px;">
                 <section class="contenido-slider" x-ref="slider"
                     x-on:scroll.debounce="$refs.slider.scrollLeft == 0 ? start = true : start = false; Math.abs(($refs.slider.scrollWidth - $refs.slider.offsetWidth) - $refs.slider.scrollLeft) < 5 ? end = true : end = false;">
                     <section class="item-slider">
@@ -211,18 +217,20 @@
                         <div class="info-slider">
                             <h2>Card 1</h2>
                         </div>
-                    </section>
-                    <!-- Resto de las secciones aquí -->
-                </section>
-                <section class="nav-slider" style="display: flex;justify-content: center;">
-                    <button class="boton-nav-slider"
-                        x-on:click="$refs.slider.scrollBy({left: $refs.slider.offsetWidth * -1, behavior: 'smooth'});"
-                        x-bind:class="start ? '' : 'boton-nav-slider--activo'">Atras</button>
-                    <button class="boton-nav-slider"
-                        x-on:click="$refs.slider.scrollBy({left: $refs.slider.offsetWidth, behavior: 'smooth'});"
-                        x-bind:class="end ? '' : 'boton-nav-slider--activo'">Next</button>
-                </section>
+                    </section> -->
+            <section class="section-top">
+                <img class="section-img-juegos"
+                    src="https://cdn-products.eneba.com/resized-products/s29Db6ZBVLneuD0t66qnYRamvGDP3p8chLz-3IomxcU_350x200_1x-0.jpeg"
+                    alt="#">
+                <img class="section-img-juegos"
+                    src="https://cdn-products.eneba.com/resized-products/yUHzd5bpM8-3KbrLgvHWypfijjUVGrLhRgRuKgt8DKs_350x200_1x-0.jpg"
+                    alt="#">
+                <img class="section-img-juegos"
+                    src="https://cdn-products.eneba.com/resized-products/6M1qP76B-j6vdX0T4bFCHgJeX99MaKBpXFxbpif1MqY_350x200_1x-0.jpeg"
+                    alt="#">
             </section>
+            <!-- Resto de las secciones aquí -->
+        </section>
 
         </section>
 
